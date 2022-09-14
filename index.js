@@ -29,7 +29,7 @@ app.use("/cart",async(req,res)=>{
 })
 app.use("/change",async(req,res)=>{
     let data=await model.updateMany({},{$set:{product_price:0}})
-    return res.send("Done successfully")
+    return res.send({sum:0})
 })
 
 
